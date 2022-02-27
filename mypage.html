@@ -1,0 +1,633 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>chatbot</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/common.css">
+	<script src="./resources/js/lib/jquery-1.11.2.min.js"></script>
+	<script src="./resources/js/lib/swiper.min.js"></script>
+	<script>
+		$(window).load(function() {
+			// 영상 리스트
+			new Swiper('.vodListW', {
+				slidesPerView: 'auto',
+				freeMode: true,
+				spaceBetween: 10,
+			});
+
+			// 사진 리스트
+			new Swiper('.photoListW', {
+				slidesPerView: 'auto',
+				freeMode: true,
+				spaceBetween: 10,
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="header">
+			<h1 class="subTit">Mypage</h1>
+			<button type="button" class="btnPrev">이전</button>
+		</div> <!-- //header -->
+		<div class="contents">
+			<section class="section">
+				<div class="titW">
+					<h2 class="tit">HomeTraining&amp;Diet</h2>
+				</div>
+
+				<p class="statusTxt">15일 동안 5Kg 감량 (지중해식식단)</p>
+
+				<div class="targetRate">
+					<p class="day"><strong>11</strong>일차</p>
+					<div class="rate">
+						<dl>
+							<dt>운동 달성률</dt>
+							<dd class="barPercent">
+								<div class="bar" style="width:78%"></div>
+							</dd>
+							<dd class="percent">78%</dd>
+						</dl>
+						<dl>
+							<dt>식단 달성률</dt>
+							<dd class="barPercent">
+								<div class="bar" style="width:50%"></div>
+							</dd>
+							<dd class="percent">50%</dd>
+						</dl>
+					</div>
+				</div> <!-- //targetRate -->
+
+				<div class="rankingRate">
+					<div class="ranking">
+						<dl>
+							<dt>획득포인트 : </dt>
+							<dd>45,000P</dd>
+						</dl>
+						<dl>
+							<dt>현재순위 : </dt>
+							<dd>23위</dd>
+						</dl>
+					</div>
+
+					<div class="targetBonus">
+						<div class="rate">
+							<dl>
+								<dt>목표</dt>
+								<dd class="targetPercent"></dd>
+							</dl>
+							<dl>
+								<dt>달성</dt>
+								<dd class="gainPercent">
+									<div class="bar" style="width:70%">70%</div>
+								</dd>
+							</dl>
+						</div>
+						<p class="bonusTxt">80%이상 달성 시, <br><strong>다어이트 도시락 7일분</strong> 증정</p>
+					</div>
+				</div> <!-- //averageRate -->
+
+				<div class="chkCalendarW">
+					<p class="monthTxt">MAY</p>
+
+					<div class="calendarW">
+						<div class="calendar">
+							<table class="calTbl">
+								<thead>
+									<tr>
+										<th scope="col">일요일</th>
+										<th scope="col">월요일</th>
+										<th scope="col">화요일</th>
+										<th scope="col">수요일</th>
+										<th scope="col">목요일</th>
+										<th scope="col">금요일</th>
+										<th scope="col">토요일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>
+											<div class="day">1</div>
+										</td>
+										<td>
+											<div class="day">2</div>
+										</td>
+										<td>
+											<div class="day">3</div>
+										</td>
+										<td>
+											<div class="day">4</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="day">5</div>
+										</td>
+										<td>
+											<div class="day">6</div>
+										</td>
+										<td>
+											<div class="day">7</div>
+										</td>
+										<td>
+											<div class="day">8</div>
+										</td>
+										<td>
+											<div class="day">9</div>
+										</td>
+										<td>
+											<div class="day">10</div>
+										</td>
+										<td>
+											<div class="day">11</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="day">12</div>
+										</td>
+										<td>
+											<div class="day">13</div>
+										</td>
+										<td>
+											<div class="day">14</div>
+										</td>
+										<td>
+											<div class="day">15</div>
+										</td>
+										<td>
+											<div class="day">16</div>
+										</td>
+										<td>
+											<div class="chk"><span class="icoTxt fitX">X</span><span class="icoTxt dietO">O</span></div>
+											<div class="day">17</div>
+										</td>
+										<td>
+											<div class="chk"><span class="icoTxt fitO">O</span><span class="icoTxt dietX">X</span></div>
+											<div class="day">18</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="day">19</div>
+										</td>
+										<td>
+											<div class="day">20</div>
+										</td>
+										<td>
+											<div class="day">21</div>
+										</td>
+										<td>
+											<div class="day">22</div>
+										</td>
+										<td>
+											<div class="day">23</div>
+										</td>
+										<td>
+											<div class="day">24</div>
+										</td>
+										<td>
+											<div class="day">25</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="day">26</div>
+										</td>
+										<td>
+											<div class="day">27</div>
+										</td>
+										<td>
+											<div class="day">28</div>
+										</td>
+										<td>
+											<div class="day">29</div>
+										</td>
+										<td>
+											<div class="day">30</div>
+										</td>
+										<td>
+											<div class="day">31</div>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div> <!-- //calendarW -->
+
+					<div class="legendW">
+						<div class="legend">
+							<dl>
+								<dt><span class="icoTxt fitO">O</span><span class="icoTxt fitX">X</span></dt>
+								<dd>운동</dd>
+							</dl>
+							<dl>
+								<dt><span class="icoTxt dietO">O</span><span class="icoTxt dietX">X</span></dt>
+								<dd>식단</dd>
+							</dl>
+						</div>
+						<p class="btnDetail"><a href="#">자세히 보러가기</a></p>
+					</div>
+				</div> <!-- //chkCalendarW -->
+			</section>
+
+			<section class="section">
+				<div class="titW">
+					<h2 class="tit">BEAUTY</h2>
+					<ul class="tag">
+						<li>#소개팅</li>
+						<li>#면접</li>
+						<li>#여행</li>
+						<li>#데이트</li>
+					</ul>
+				</div> <!-- //titW -->
+
+				<div class="suggestion">
+					<div class="info">
+						<div class="img"><img src="./resources/images/tmp/@tmp_person.jpg" alt="이미지"></div>
+
+						<div class="status">
+							<dl>
+								<dt>당신의 얼굴형은</dt>
+								<dd><span>땅콩형</span></dd>
+							</dl>
+							<dl>
+								<dt>당신의 피부타입은</dt>
+								<dd><span>지성</span></dd>
+							</dl>
+							<dl>
+								<dt>당신의 머리타입은</dt>
+								<dd><span>뻣뻣한 형</span></dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="txtBox">
+						<p>당신의 얼굴형 어쩌구 저쩌구해서 어쩌구 저쩌구 하는게 가장 좋은 방법입니다. 당신의 얼굴형 어쩌구 저쩌구해서 어쩌구 저쩌구 하는게 가장 좋은 방법입니다.</p>
+					</div>
+				</div> <!-- //suggestion -->
+
+				<div class="subSection">
+					<h3 class="subTit">메이크업 추천 영상</h3>
+					<div class="vodListW swiper-container">
+						<ul class="vodList swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- //subSection -->
+
+				<div class="subSection">
+					<h3 class="subTit">헤어 추천 영상</h3>
+					<div class="vodListW swiper-container">
+						<ul class="vodList swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>얼굴 선을 더 부드럽게! <br>헤어 라인 보정컷</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!<미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- //subSection -->
+			</section>
+
+			<section class="section">
+				<div class="titW">
+					<h2 class="tit">CODI</h2>
+					<ul class="tag">
+						<li>#소개팅</li>
+						<li>#면접</li>
+						<li>#여행</li>
+						<li>#데이트</li>
+					</ul>
+				</div> <!-- //titW -->
+
+				<div class="suggestion">
+					<div class="info">
+						<div class="img"><img src="./resources/images/tmp/@tmp_person.jpg" alt="이미지"></div>
+
+						<div class="status">
+							<dl>
+								<dt>키</dt>
+								<dd><span>155cm</span></dd>
+							</dl>
+							<dl>
+								<dt>몸무게</dt>
+								<dd><span>50kg</span></dd>
+							</dl>
+							<dl>
+								<dt>사이즈</dt>
+								<dd><span></span></dd>
+							</dl>
+						</div>
+					</div>
+
+					<div class="txtBox">
+						<p>당신의 얼굴형 어쩌구 저쩌구해서 어쩌구 저쩌구 하는게 가장 좋은 방법입니다. 당신의 얼굴형 어쩌구 저쩌구해서 어쩌구 저쩌구 하는게 가장 좋은 방법입니다.</p>
+					</div>
+				</div> <!-- //suggestion -->
+
+				<div class="subSection">
+					<h3 class="subTit">코디 추천 영상</h3>
+					<div class="vodListW swiper-container">
+						<ul class="vodList swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+									<div class="txt">
+										<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- //subSection -->
+
+				<div class="subSection">
+					<h3 class="subTit">당신에게 추천리드리 의상 스타일</h3>
+					<div class="photoListW swiper-container">
+						<ul class="photoList swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- //subSection -->
+
+				<div class="subSection">
+					<h3 class="subTit">당신에게 추천리드리 악세사리 스타일</h3>
+					<div class="photoListW swiper-container">
+						<ul class="photoList swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- //subSection -->
+
+				<div class="subSection">
+					<h3 class="subTit">당신에게 추천리드리 슈즈 스타일</h3>
+					<div class="photoListW swiper-container">
+						<ul class="photoList swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#">
+									<div class="img"><img src="./resources/images/tmp/@tmp_photo.jpg" alt="이미지"></div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- //subSection -->
+			</section>
+
+			<section class="section">
+				<div class="titW">
+					<h2 class="tit">Fortune</h2>
+				</div> <!-- //titW -->
+
+				<ul class="myFortueList">
+					<li>
+						<div class="img"><img src="./resources/images/img/zodiac02.png" alt="이미지"></div>
+						<dl>
+							<dt>소띠</dt>
+							<dd>소띠인 당신은 어쩌구 저쩌구 소띠인 당신은 어쩌구 저쩌구</dd>
+						</dl>
+					</li>
+					<li>
+						<div class="img"><img src="./resources/images/img/con06.png" alt="이미지"></div>
+						<dl>
+							<dt>게자리</dt>
+							<dd>소띠인 당신은 어쩌구 저쩌구 소띠인 당신은 어쩌구 저쩌구</dd>
+						</dl>
+					</li>
+					<li>
+						<div class="img"><img src="./resources/images/img/blood_ab.png" alt="이미지"></div>
+						<dl>
+							<dt>AB형</dt>
+							<dd>소띠인 당신은 어쩌구 저쩌구 소띠인 당신은 어쩌구 저쩌구</dd>
+						</dl>
+					</li>
+					<li>
+						<div class="img"><img src="./resources/images/img/color_blue.png" alt="이미지"></div>
+						<dl>
+							<dt>하늘색</dt>
+							<dd>소띠인 당신은 어쩌구 저쩌구 소띠인 당신은 어쩌구 저쩌구</dd>
+						</dl>
+					</li>
+				</ul>
+
+				<div class="subSection">
+					<h3 class="subTit">오늘의 운세</h3>
+					<div class="txtBox">
+						<p>오늘의 운세 어쩌구 저쩌구해서 어쩌구 저쩌구 하는게 가장 좋은 방법입니다. 당신의 얼굴형 어쩌구 저쩌구해서 어쩌구 저쩌구 하는게 가장 좋은 방법입니다.</p>
+					</div>
+				</div> <!-- //subSection -->
+
+				<div class="subSection">
+					<h3 class="subTit">내가 뽑는 오늘의 운세</h3>
+					<ul class="fortuneList">
+						<li class="fortune01">
+							<a href="#" title="타로 보러가기">
+								<div class="img"><img src="./resources/images/img/fortune01.png" alt="타로 이미지"></div>
+								<p>타로 보러가기</p>
+							</a>
+						</li>
+						<li class="fortune02" title="주역 보러가기">
+							<a href="#">
+								<div class="img"><img src="./resources/images/img/fortune02.png" alt="주역 이미지"></div>
+								<p>주역 보러가기</p>
+							</a>
+						</li>
+						<li class="fortune03" title="포춘쿠기 열기">
+							<a href="#">
+								<div class="img"><img src="./resources/images/img/fortune03.png" alt="포춘쿠키 이미지"></div>
+								<p>포춘쿠기 열기</p>
+							</a>
+						</li>
+					</ul>
+				</div> <!-- //subSection -->
+			</section>
+		</div> <!-- //contents -->
+	</div> <!-- //wrap -->
+
+
+
+	<div class="layerPop" style="display:none;">
+		<div class="popCon">
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">곰백마리 ㅜㅜ 너무 운동을 안 했어 <br>어떡할거야 지금은 충격 요법이 좀 필요해!!</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+			<ul class="vodList">
+				<li>
+					<a href="#">
+						<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+						<div class="txt">
+							<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+						<div class="txt">
+							<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<button type="button" class="btnClose">닫기</button>
+		</div>
+	</div> <!-- //layerPop -->
+
+</body>
+
+</html>

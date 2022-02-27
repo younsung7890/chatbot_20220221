@@ -1,0 +1,511 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>chatbot</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/common.css">
+	<script src="./resources/js/lib/jquery-1.11.2.min.js"></script>
+	<script src="./resources/js/lib/swiper.min.js"></script>
+	<script>
+		$(window).load(function() {
+			// 슬라이드 리스트
+			new Swiper('.slideListW', {
+				slidesPerView: 'auto',
+				//freeMode: true,
+				//centeredSlides: true,
+				spaceBetween: 5,
+				pagination: {
+					el: '.swiper-pagination',
+				},
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="chatWrap">
+		<div class="chatHeader">
+			<p class="point">12,200P</p>
+			<button type="button" class="btnMenu">메뉴열기</button>
+		</div> <!-- //chatHeader -->
+		<div class="chatContents">
+			<div class="dateDivision">
+				<p>2021년 11월 24일 수요일</p>
+			</div>
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">사용자님 1일차인데 운동하셔야죠?</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="exerciseBox">
+				<p class="day">1일차</p>
+				<ul class="exerciseList">
+					<li>
+						<a href="#">
+							<div class="img"><img src="./resources/images/tmp/@tmp_exVod1.jpg" alt="운동영상"></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="img"><img src="./resources/images/tmp/@tmp_exVod2.jpg" alt="운동영상"></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="img"><img src="./resources/images/tmp/@tmp_exVod1.jpg" alt="운동영상"></div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="img"><img src="./resources/images/tmp/@tmp_exVod1.jpg" alt="운동영상"></div>
+						</a>
+					</li>
+				</ul>
+				<p class="linkTxt onlyTxt"><a href="#">운동하고 오기</a></p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox targetImgBox">
+				<div class="img"><img src="./resources/images/img/img_fail.png" alt="실패"></div>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">오 이런! 실망....</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">사용자님 오늘 1일차인데 실망이에요</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">하지만 아직은 포기하지 마세요.</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">대신 사용자님이 다이어트에 성공할 수 있게 나머지 일정에서 조정해 드릴께요.</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="statusBox">
+				<p class="txt refresh">일정 재조정 중....</p>
+			</div> <!-- //statusBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">이 운동이 2~8일차에 추가 되었어요.</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="exerciseBox add">
+				<ul class="exerciseList">
+					<li>
+						<a href="#">
+							<div class="img"><img src="./resources/images/tmp/@tmp_exVod1.jpg" alt="운동영상"></div>
+						</a>
+					</li>
+				</ul>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">자 그럼 식단은 모두 지키셨나요?</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox foodBox">
+				<ul class="foodList">
+					<li>
+						<dl>
+							<dt>1일차 아침</dt>
+							<dd class="img"><img src="./resources/images/tmp/@tmp_food1.jpg" alt="아침 사진"></dd>
+						</dl>
+						<p class="boxTxt">못지킴</p>
+					</li>
+					<li>
+						<dl>
+							<dt>1일차 점심</dt>
+							<dd class="img"><img src="./resources/images/tmp/@tmp_food1.jpg" alt="점심 사진"></dd>
+						</dl>
+						<p class="boxTxt">못지킴</p>
+					</li>
+					<li>
+						<dl>
+							<dt>1일차 저녁</dt>
+							<dd class="img"><img src="./resources/images/tmp/@tmp_food1.jpg" alt="저녁 사진"></dd>
+						</dl>
+						<p class="boxTxt">못지킴</p>
+					</li>
+				</ul>
+			</div> <!-- //chatBox -->
+
+			<div class="emoticonBox">
+				<div class="img"><img src="./resources/images/ico/ico_emoticon01.png" height="60" alt="이모티콘"></div>
+			</div> <!-- //emoticonBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">운동도 하나도 안 하고 식단도 하나도 안하고 으아아~~~~</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">그래도 아직 1일차이니깐 식단도 재조정해 볼께요. <br>그냥 굶길까?</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">아 그런데 일단 뭐 먹었는지 한 번 올려봐 줄래요.</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="userMsg">
+				<div class="imgBox">
+					<div class="img"><img src="./resources/images/tmp/@tmp_food12.jpg" alt="사진"></div>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">컥 피자 이걸 언제요?</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">세끼 다 피자 먹었어요.</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">총 몇 조각을 먹은 거죠?</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="statusBox">
+				<p class="txt calc">검색 API를 통해 계산중...</p>
+			</div> <!-- //statusBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">컥 3240kcal 대박</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">도미노 피자 할라피뇨 피자 먹었어요.</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">2~8일차 식단이 재조정 되었습니다.</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="imgBox">
+					<div class="img"><img src="./resources/images/tmp/@tmp_food1.jpg" alt="사진"></div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">이거 조정해서~~</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">아 맞다 이번 주 일요일에 데이트 있다고 하지 않았어요?</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">네 맞아요~</p>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">그럼 나 예쁘게 하고 나가게 화장하는 법 좀 추전해 주겠어?</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">오호 축하해 곰순이, 곰순이 얼굴 사진 한 번 올려봐요!</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="uploadBox">
+				<div class="fileBtn"><button type="button">얼굴분석<br>사진올리기</button></div>
+				<div class="txtBox">
+					<p>업로드 하시는 모든 이미지는 이미지 분석을 위해 사용한 후 자동 폐기합니다.</p>
+				</div>
+			</div> <!-- //uploadBox -->
+
+			<div class="statusBox">
+				<p class="txt analysis">이미지 업로드 후 얼굴형 분석중...</p>
+			</div> <!-- //statusBox -->
+
+			<div class="faceAnalysisBox">
+				<div class="faceAnalysis">얼굴형 분석</div>
+			</div> <!-- //faceAnalysisBox -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">오오 재밌어 근데 영상에서 사용한 화장품 어디 제품 이야?</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">기초 화장품은 이거 OOO제품이야.</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="imgBox">
+					<div class="img"><img src="./resources/images/tmp/@tmp_cosmetic1.jpg" alt="화장품"></div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">기초 화장품에 대한 상세한 설명~~</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">립스틱은 이거 OOO제품이야.</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="imgBox">
+					<div class="img"><img src="./resources/images/tmp/@tmp_cosmetic2.jpg" alt="화장품"></div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">립스틱에 대한 상세한 설명~~</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">나 립스틱 사고 싶어~</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">그래? 그럼 쿠폰 가지고 아래로 가봐~</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="couponBox">
+					<a href="#">
+						<div class="img"><img src="./resources/images/img/img_coupon_10000.png" height="135" alt="10,000원 할인쿠폰"></div>
+					</a>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">나 소개팅 있어 ! 나 완전세련 되게 화장하는 법 좀 코치해줘~</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">오호 축하해 곰순이, 곰순이 얼굴 사진 한 번 올려봐요!</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="uploadBox">
+				<div class="fileBtn"><button type="button">얼굴<br>사진올리기</button></div>
+				<div class="txtBox">
+					<p>업로드 하시는 모든 이미지는 이미지 분석을 위해 사용한 후 자동 폐기합니다.</p>
+				</div>
+			</div> <!-- //uploadBox -->
+
+			<div class="statusBox">
+				<p class="txt cosmetic">업로드 된 사진에 모델의 화장컬러가 적용 중...</p>
+			</div> <!-- //statusBox -->
+
+			<div class="makeupBox">
+				<ul class="makeupList">
+					<li>
+						<div class="img"><img src="./resources/images/tmp/@tmp_makeup1.jpg" alt="메이크업사진"></div>
+					</li>
+					<li>
+						<div class="img"><img src="./resources/images/tmp/@tmp_makeup2.jpg" alt="메이크업사진"></div>
+					</li>
+				</ul>
+			</div> <!-- //makeupBox -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">모델이 사용한 칼라와 유사한 칼라의 립스틱이야.</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="imgBox">
+					<div class="img"><img src="./resources/images/tmp/@tmp_cosmetic2.jpg" alt="화장품"></div>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="userMsg">
+				<div class="box">
+					<p class="msg">나 립스틱 사고 싶어~</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">그래? 그럼 쿠폰 가지고 아래로 가봐~</p>
+					<div class="time">오전 09:31</div>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="couponBox">
+					<a href="#">
+						<div class="img"><img src="./resources/images/img/img_coupon_10000.png" height="135" alt="10,000원 할인쿠폰"></div>
+					</a>
+				</div> <!-- //box -->
+			</div> <!-- //userMsg -->
+
+		</div> <!-- //chatContents -->
+		<div class="chatBottom">
+			<div class="chatMsgBox">
+				<button type="button" class="btnPhoto">사진</button>
+				<div class="chatMsgF">
+					<form action="#">
+						<fieldset>
+							<div class="ipW"><input type="text" class="ipBox" title="메세지를 입력" placeholder="메세지를 입력하세요."></div>
+						</fieldset>
+						<p><button type="submit" class="btnSend">메세지 전송</button></p>
+					</form>
+				</div> <!-- //chatMsgF -->
+			</div> <!-- chatMsgBox -->
+		</div> <!-- //chatBottom -->
+	</div> <!-- //chatWrap -->
+</body>
+
+</html>

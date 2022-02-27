@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>chatbot</title>
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/swiper.min.css">
+	<link rel="stylesheet" href="./resources/css/common.css">
+	<script src="./resources/js/lib/jquery-1.11.2.min.js"></script>
+	<script src="./resources/js/lib/swiper.min.js"></script>
+	<script>
+		// 아코디언
+		function fn_acc(obj) {
+			var accBox = $(obj).parents('.accBox');
+
+			if (accBox.hasClass('on')) {
+				accBox.removeClass('on');
+			} else {
+				accBox.addClass('on').siblings('.accBox').removeClass('on');
+			}
+
+			return false;
+		}
+
+		function fn_popup(obj) {
+			$(obj).show();
+
+			$('.btnClose', obj).off('click').on('click', function() {
+				$(obj).hide();
+			});
+		}
+
+		$(window).load(function() {
+			var zodiacListSwiper = new Swiper('.zodiacList', {
+				loop: true,
+				slidesPerView: 'auto',
+				spaceBetween: 38,
+				navigation: {
+					nextEl: '.btnNext',
+					prevEl: '.btnPrev',
+				},
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="chatWrap">
+		<div class="chatHeader">
+			<p class="point">12,200P</p>
+			<button type="button" class="btnMenu">메뉴열기</button>
+		</div> <!-- //chatHeader -->
+		<div class="chatContents">
+			<button type="button" class="btn" onclick="fn_popup('#popup01')">팝업01</button>
+			<button type="button" class="btn" onclick="fn_popup('#popup02')">팝업02</button>
+			<button type="button" class="btn" onclick="fn_popup('#popup03')">팝업03</button>
+			<button type="button" class="btn" onclick="fn_popup('#popup04')">팝업04</button>
+			<button type="button" class="btn" onclick="fn_popup('#popup05')">팝업05</button>
+		</div> <!-- //chatContents -->
+		<div class="chatBottom">
+			<div class="chatMsgBox">
+				<button type="button" class="btnPhoto">사진</button>
+				<div class="chatMsgF">
+					<form action="#">
+						<fieldset>
+							<div class="ipW"><input type="text" class="ipBox" title="메세지를 입력" placeholder="메세지를 입력하세요."></div>
+						</fieldset>
+						<p><button type="submit" class="btnSend">메세지 전송</button></p>
+					</form>
+				</div> <!-- //chatMsgF -->
+			</div> <!-- chatMsgBox -->
+		</div> <!-- //chatBottom -->
+	</div> <!-- //chatWrap -->
+
+	<div class="layerPop" id="popup01" style="display:none;">
+		<div class="popCon">
+			<div class="popHeader">
+				<h1 class="popTit">사주</h1>
+				<button type="button" class="btnClose">닫기</button>
+			</div>
+
+			<div class="popContent">
+				<ul class="fitDetailList">
+					<li>
+						<dl>
+							<dt>나는 무엇으로 태어났을까?</dt>
+							<dd>
+								<div class="img"><img src="./resources/images/ico/ico_fit01.png" alt="아이콘"></div>
+								<p class="txt">나는 무엇으로 태어났을까? <br>그 오행은 나를 뜻하는 중요한 시작점이 됩니다.</p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>사주팔자 안에서의 나의 힘은?</dt>
+							<dd>
+								<div class="img"><img src="./resources/images/ico/ico_fit02.png" alt="아이콘"></div>
+								<p class="txt">나는 무엇으로 태어났을까? <br>그 오행은 나를 뜻하는 중요한 시작점이 됩니다.</p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>60갑자로 보는 나와 너</dt>
+							<dd>
+								<div class="img"><img src="./resources/images/ico/ico_fit03.png" alt="아이콘"></div>
+								<p class="txt">나는 무엇으로 태어났을까? <br>그 오행은 나를 뜻하는 중요한 시작점이 됩니다.</p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>나의 띠와 또 다른 진짜 동물</dt>
+							<dd>
+								<div class="img"><img src="./resources/images/ico/ico_fit04.png" alt="아이콘"></div>
+								<p class="txt">나는 무엇으로 태어났을까? <br>그 오행은 나를 뜻하는 중요한 시작점이 됩니다.</p>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt>나의 띠와 또 다른 진짜 동물</dt>
+							<dd>
+								<div class="img"><img src="./resources/images/ico/ico_fit04.png" alt="아이콘"></div>
+								<p class="txt">나는 무엇으로 태어났을까? <br>그 오행은 나를 뜻하는 중요한 시작점이 됩니다.</p>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div> <!-- //popContent -->
+
+		</div> <!-- //popCon -->
+	</div> <!-- //layerPop -->
+
+	<div class="layerPop" id="popup02" style="display:none;">
+		<div class="popCon">
+			<div class="popHeader">
+				<h1 class="popTit">사주팔자 안에서의 나의 힘은?</h1>
+				<button type="button" class="btnClose">닫기</button>
+			</div>
+
+			<div class="popContent accContent">
+				<div class="accListW">
+
+					<div class="accBox on">
+						<h2><a href="#" onclick="return fn_acc(this);">소개말</a></h2>
+						<div class="viewBox">
+							<div class="box01">
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+							<div class="box02">
+								<h3>나의 힘이 약합니다.</h3>
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+						</div>
+					</div> <!-- //accBox -->
+
+					<div class="accBox">
+						<h2><a href="#" onclick="return fn_acc(this);">소개말</a></h2>
+						<div class="viewBox">
+							<div class="box01">
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+							<div class="box02">
+								<h3>나의 힘이 약합니다.</h3>
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+						</div>
+					</div> <!-- //accBox -->
+
+					<div class="accBox">
+						<h2><a href="#" onclick="return fn_acc(this);">소개말</a></h2>
+						<div class="viewBox">
+							<div class="box01">
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+							<div class="box02">
+								<h3>나의 힘이 약합니다.</h3>
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+						</div>
+					</div> <!-- //accBox -->
+
+					<div class="accBox">
+						<h2><a href="#" onclick="return fn_acc(this);">소개말</a></h2>
+						<div class="viewBox">
+							<div class="box01">
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+							<div class="box02">
+								<h3>나의 힘이 약합니다.</h3>
+								<p>사주의 여덟글자들은 오행마다 뜻하는 바가 다르고 나에게 기운을 주고 뺏어가는 영향력이 존재합니다. 그 중 나를 생 하는 오행과 나를 극 하는 오행 그리고 나의 기본적 입지를 종합해 보았을 때 알맞은 기운을 서로 나누고 베풀고 있는 사주 구성이면 좋겠으나 나의 기운에 과한 기운의 쏠림이 있어...</p>
+							</div>
+						</div>
+					</div> <!-- //accBox -->
+
+				</div> <!-- //accListW -->
+			</div> <!-- //popContent -->
+		</div> <!-- //popCon -->
+	</div> <!-- //layerPop -->
+
+	<div class="layerPop" id="popup03" style="display:none;">
+		<div class="popCon">
+			<div class="popHeader">
+				<h1 class="popTit">타이틀</h1>
+				<button type="button" class="btnClose">닫기</button>
+			</div>
+
+			<div class="popContent">
+				<div class="coupleFitW">
+					<div class="coupleZodiac">
+						<div class="img"><img src="./resources/images/ico/ico_zodiac_c02.png" alt="소띠"></div>
+						<div class="img"><img src="./resources/images/ico/ico_zodiac_c00.png" alt="띠"></div>
+					</div>
+
+					<ul class="choiceList">
+						<li><button type="button" class="on">궁합보기</button></li>
+						<li><button type="button">직업운</button></li>
+						<li><button type="button">애정운</button></li>
+						<li><button type="button">재회운</button></li>
+					</ul>
+
+					<div class="zodiacList swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c01.png" alt="쥐띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c02.png" alt="소띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c03.png" alt="호랑이띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c04.png" alt="토끼띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c05.png" alt="용띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c06.png" alt="뱀띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c07.png" alt="말띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c08.png" alt="양띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c09.png" alt="원숭이띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c10.png" alt="닭띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c11.png" alt="개띠"></div>
+							</li>
+							<li class="swiper-slide">
+								<div class="img"><img src="./resources/images/ico/ico_zodiac_c12.png" alt="돼지띠"></div>
+							</li>
+						</ul>
+
+						<div class="btnW">
+							<button type="button" class="btnPrev">이전</button>
+							<button type="button" class="btnNext">다음</button>
+						</div>
+					</div> <!-- //zodiacList -->
+
+					<p class="txt">당신과 상대방은 궁합은 어쩌고 어쩌고 입니다. 설명 당신과 상대방은 궁합은 어쩌고 어쩌고 입니다. 설명 당신과 상대방은 궁합은 어쩌고 어쩌고 입니다. 설명 </p>
+				</div> <!-- //coupleFitW -->
+			</div> <!-- //popContent -->
+		</div> <!-- //popCon -->
+	</div> <!-- //layerPop -->
+
+	<div class="layerPop" id="popup04" style="display:none;">
+		<div class="popCon">
+			<div class="popHeader">
+				<h1 class="popTit">상품 상세보기</h1>
+				<button type="button" class="btnClose">닫기</button>
+			</div>
+
+			<div class="popContent">
+				<div class="prodDetail">
+					<div class="img"><img src="./resources/images/tmp/@tmp_detail.jpg" alt="상품"></div>
+					<h2 class="prodName">르마네 울 반팔니트 (울55%)</h2>
+					<div class="color">
+						<span style="background:#0c9a6a;">색상</span>
+						<span style="background:#4f0d0f;">색상</span>
+						<span style="background:#f18434;">색상</span>
+						<span style="background:#630c9a;">색상</span>
+					</div>
+
+					<dl class="price">
+						<dt>판매가</dt>
+						<dd><del>48,000원</del></dd>
+					</dl>
+
+					<dl class="price">
+						<dt>할인판매가</dt>
+						<dd>48,000원 <span class="dc">(5% 할인)</span></dd>
+					</dl>
+
+					<div class="btnW">
+						<a href="#" class="btnLine down">할인쿠폰 다운받기</a>
+						<a href="#" class="btnL primary">상품 보러가기</a>
+					</div>
+				</div> <!-- //prodDetail -->
+			</div> <!-- //popContent -->
+
+		</div> <!-- //popCon -->
+	</div> <!-- //layerPop -->
+
+	<div class="layerPop" id="popup05" style="display:none;">
+		<div class="popCon">
+			<div class="chatBox chatbotBox">
+				<p class="chatBot">코치 로시</p>
+			</div> <!-- //chatBox -->
+
+			<div class="chatBox">
+				<div class="box">
+					<p class="msg">곰백마리 ㅜㅜ 너무 운동을 안 했어 <br>어떡할거야 지금은 충격 요법이 좀 필요해!!</p>
+				</div> <!-- //box -->
+			</div> <!-- //chatBox -->
+			<ul class="vodList">
+				<li>
+					<a href="#">
+						<div class="img"><img src="./resources/images/tmp/@tmp_vod1.jpg" alt="이미지"></div>
+						<div class="txt">
+							<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="img"><img src="./resources/images/tmp/@tmp_vod2.jpg" alt="이미지"></div>
+						<div class="txt">
+							<p>배우들이 가장 잘 쓴 <br>미모 상승 꿀템 총정리!</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<button type="button" class="btnClose">닫기</button>
+		</div>
+	</div> <!-- //layerPop -->
+
+</body>
+
+</html>

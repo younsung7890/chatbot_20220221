@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+/* Web Fonts */
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 300;
+    src: url("fonts/NotoSansKR-DemiLight-Hestia.otf") format("truetype"), url("fonts/NotoSansKR-DemiLight.woff2") format("woff2"), url("fonts/NotoSansKR-DemiLight.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 500;
+    src: url("fonts/NotoSansKR-Medium-Hestia.otf") format("truetype"), url("fonts/NotoSansKR-Medium.woff2") format("woff2"), url("fonts/NotoSansKR-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    font-weight: 600;
+    src: url("fonts/NotoSansKR-Bold-Hestia.otf") format("truetype"), url("fonts/NotoSansKR-Bold.woff2") format("woff2"), url("fonts/NotoSansKR-Bold.woff") format("woff");
+}
+
+body,
+div,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+blockquote,
+table,
+th,
+td,
+input,
+select,
+textarea,
+blockquote,
+address,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+fieldset,
+img {
+    border: 0 none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+input,
+select,
+textarea,
+button {
+    font-size: 100%;
+    vertical-align: middle;
+}
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background: #fff;
+    -webkit-overflow-scrolling: touch;
+    -webkit-text-size-adjust: none;
+}
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-size: 15px;
+    line-height: 1;
+    font-family: "Noto Sans KR", HelveticaNeue-Light, AppleSDGothicNeo-Light, sans-serif;
+    color: #222;
+    font-weight: 300;
+    word-break: break-word;
+    letter-spacing: -0.05em;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:link,
+a:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+img {
+    vertical-align: top;
+}
+
+hr {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    font-weight: 600;
+}
+
+/* html5 tag */
+article,
+aside,
+details,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section,
+main {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search],
+input[type=tel],
+input[type=number],
+textarea {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+input[type=checkbox]:checked {
+    background-color: #666;
+    -webkit-appearance: checkbox;
+}
+
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
+input[type=file] {
+    -webkit-appearance: button;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/* iPhone number color reset */
+a[href^=tel] {
+    color: inherit;
+    text-decoration: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 100%;
+}
+
+select:focus::-ms-value {
+    background-color: transparent;
+    color: #000;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+/* WebKit browsers */
+::-webkit-input-placeholder {
+    color: #999;
+    -webkit-border-radius: 0;
+}
+
+/* Mozilla Firefox 4 to 18 */
+:-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Mozilla Firefox 19+ */
+::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+/* Internet Explorer 10+ */
+:-ms-input-placeholder {
+    color: #999;
+}
+
+/* global */
+.blind {
+    position: absolute;
+    top: -9999px;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    font-size: 1%;
+    line-height: 0;
+}
+
+/* 1줄 말줄임 */
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* 2줄 말줄임 */
+.ellipsis2 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
